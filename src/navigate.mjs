@@ -1,35 +1,35 @@
 /// Module
 
 export default commands => {
-  // let depth      = 0
-  //   , horizontal = 0
+  let depth      = 0
+    , horizontal = 0
 
-  // for (const commandData of commands) {
-  //   const command  = commandData.command
-  //       , distance = commandData.distance
+  for (const commandData of commands) {
+    const command  = commandData.command
+        , distance = commandData.distance
 
-  //   switch (command) {
-  //     case 'forward':
-  //       horizontal += distance
-  //       break
-  //     case 'down':
-  //       depth += distance
-  //       break
-  //     case 'up':
-  //       depth -= distance
+    switch (command) {
+      case 'forward':
+        horizontal += distance
+        break
+      case 'down':
+        depth += distance
+        break
+      case 'up':
+        depth -= distance
 
-  //       if (depth < 0) depth = 0
+        if (depth < 0) depth = 0
 
-  //       break
-  //     default:
-  //       throw `Unknown command: ${command}`
-  //   }
-  // }
+        break
+      default:
+        throw `Unknown command: ${command}`
+    }
+  }
 
-  // return {
-  //   depth,
-  //   horizontal,
-  // }
+  return {
+    depth,
+    horizontal,
+  }
 
   return undefined
 }

@@ -1,11 +1,13 @@
 /// Internal Dependencies
 
 import multiplyTests from './multiplyTests.mjs'
+import navigateTests from './navigateTests.mjs'
 
 /// Module
 
 const tests = {
   multiply: multiplyTests,
+  navigate: navigateTests,
 }
 
 for (const groupName in tests) {
