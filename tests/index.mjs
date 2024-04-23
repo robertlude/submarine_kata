@@ -1,13 +1,15 @@
 /// Internal Dependencies
 
-import multiplyTests from './multiplyTests.mjs'
-import navigateTests from './navigateTests.mjs'
+import multiplyTests     from './multiplyTests.mjs'
+import navigateTests     from './navigateTests.mjs'
+import outputResultTests from './outputResultTests.mjs'
 
 /// Module
 
 const tests = {
-  multiply: multiplyTests,
-  navigate: navigateTests,
+  multiply:          multiplyTests,
+  navigate:          navigateTests,
+  outputResultTests: outputResultTests,
 }
 
 for (const groupName in tests) {
