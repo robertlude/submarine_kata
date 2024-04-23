@@ -1,4 +1,5 @@
 /// Module
 
 export default input =>
-  [input.split('\n')]
+  // [input.split('\n')]
+  undefined

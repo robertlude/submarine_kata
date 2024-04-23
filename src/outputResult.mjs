@@ -1,4 +1,5 @@
 /// Module
 
 export default result =>
-  console.log(result)
+  // console.log(result)
+  undefined
