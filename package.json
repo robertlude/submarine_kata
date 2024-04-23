@@ -1,0 +1,13 @@
+{
+  "name": "submarine_kata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.mjs",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Robert Lude",
+  "license": "UNLICENSED"
+}
