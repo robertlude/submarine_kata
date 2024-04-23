@@ -4,16 +4,18 @@ import multiplyTests      from './multiplyTests.mjs'
 import navigateTests      from './navigateTests.mjs'
 import outputResultTests  from './outputResultTests.mjs'
 import parseCommandsTests from './parseCommandsTests.mjs'
-import parseInputs        from './parseInputsTests.mjs'
+import parseInputsTests   from './parseInputsTests.mjs'
+import readInputTests     from './readInputTests.mjs'
 
 /// Module
 
 const tests = {
-  multiply:           multiplyTests,
-  navigate:           navigateTests,
-  outputResultTests:  outputResultTests,
-  parseCommandsTests: parseCommandsTests,
-  parseInputs:        parseInputs,
+  multiply:      multiplyTests,
+  navigate:      navigateTests,
+  outputResult:  outputResultTests,
+  parseCommands: parseCommandsTests,
+  parseInputs:   parseInputsTests,
+  readInput:     readInputTests,
 }
 
 for (const groupName in tests) {
