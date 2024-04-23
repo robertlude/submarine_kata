@@ -1,3 +1,13 @@
+# Submarine Kata
+
+## Running
+
+`npm run start`
+
+`npm run test`
+
+## Problem Description
+
 --- Submarine Puzzle ---
 
 Bam! You've found yourself teleported in a submarine, deep under the sea.
