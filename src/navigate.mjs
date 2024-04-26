@@ -1,7 +1,8 @@
 /// Module
 
 export default commands => {
-  let depth      = 0
+  let aim        = 0
+    , depth      = 0
     , horizontal = 0
 
   for (const commandData of commands) {
@@ -11,14 +12,16 @@ export default commands => {
     switch (command) {
       case 'forward':
         horizontal += distance
-        break
-      case 'down':
-        depth += distance
-        break
-      case 'up':
-        depth -= distance
+        depth      += distance * aim
 
         if (depth < 0) depth = 0
+        break
+      case 'down':
+        aim += distance
+
+        break
+      case 'up':
+        aim -= distance
 
         break
       default:
